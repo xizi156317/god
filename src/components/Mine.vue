@@ -64,6 +64,20 @@
 			</div>
 			<!--border-line-->
 			<div class="border_line"></div>
+			<!--shopOrder-->
+			<div class="wait">
+				<div class="all_orders">
+					<span class="l_span"><i class="left_icon"></i>我的订单</span>
+					<span class="r_span">查看全部订单<i class="right_icon"></i></span>
+				</div>
+				<div class="nav">
+					<a href=""><em></em>待付款</a>
+					<a href=""><em></em>待发货</a>
+					<a href=""><em></em>待收货</a>
+					<a href=""><em></em>待评价</a>
+					<a href=""><em></em>无忧购/售后</a>	
+				</div>
+			</div>
 		</section>
 	</body>
 	</html>
@@ -276,9 +290,90 @@ header .hideinfo .myicon{
 }
 /*border_line*/
 .border_line{
-    /*width: 10rem;*/
     height: .266667rem;
     background: #eee;	
+}
+/*shopoOrder*/
+.wait{
+	margin: 0 auto;
+	width: 9.066667rem;
+	border-bottom: 1px solid #eee
+}
+.wait .all_orders{
+	display: flex;
+	justify-content: space-between;
+    height: 1.333333rem;
+    line-height: 1.333333rem;
+    font-size: .4rem;
+}
+.wait .all_orders .r_span{
+	font-size: .346667rem;
+    color: #999;
+}
+.wait .all_orders .left_icon{
+	display: inline-block;
+	width: .4rem;
+    height: .4rem;
+    margin-right: .266667rem;
+    background: url(http://static-r.msparis.com/m-site/images/user/list/order@3x.png) no-repeat 50%;
+    background-size: contain;
+}
+.wait .all_orders .right_icon{
+    width: .266667rem;
+    height: .266667rem;
+    background-size: auto .266667rem;
+    margin-top: -.066667rem;
+    margin-left: .2rem;
+    margin-right: 0;
+    display: inline-block;
+    background: url(http://static-r.msparis.com/m-site/images/index/right@2x.png) no-repeat 50%;
+    background-size: contain;	
+}
+.wait a{
+    text-align: center;
+    width: 20%;
+    padding: 0 0 .466667rem;
+    font-size: .346667rem;
+    position: relative;
+    color: #333;
+    white-space: nowrap;	
+    display: flex;
+    flex-direction: column;
+}
+.wait a em{
+    width: .533333rem;
+    height: .533333rem;
+    margin: 0 auto;
+}
+.wait .nav{
+	display: flex;
+	flex-direction: row;
+	
+}
+.wait a:first-child em{
+    background: url(http://static-r.msparis.com/m-site/images/user/order/dfk@3x.png) no-repeat 50%;
+    background-size: contain;	
+    margin-bottom: .133333rem;
+}
+.wait a:nth-child(2) em{
+    background: url(http://static-r.msparis.com/m-site/images/user/order/dfh@3x.png) no-repeat 50%;
+    background-size: contain;	
+    margin-bottom: .133333rem;
+}
+.wait a:nth-child(3) em{
+    background: url(http://static-r.msparis.com/m-site/images/user/order/dsh@3x.png) no-repeat 50%;
+    background-size: contain;
+    margin-bottom: .133333rem;
+}
+.wait a:nth-child(4) em{
+    background: url(http://static-r.msparis.com/m-site/images/user/order/dpj@3x.png) no-repeat 50%;
+    background-size: contain;
+    margin-bottom: .133333rem;	
+}
+.wait a:nth-child(5) em{
+	background: url(http://static-r.msparis.com/m-site/images/user/order/das@3x.png) no-repeat 50%;
+    background-size: contain;
+    margin-bottom: .133333rem;	
 }
 /*footer{
 	display: flex;
